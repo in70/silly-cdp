@@ -13,7 +13,6 @@ export default function Home() {
             <Button />
             <div>
                 <ToggleMintRepay />
-                <MintCard />
             </div>
         </WalletProvider>
     );
