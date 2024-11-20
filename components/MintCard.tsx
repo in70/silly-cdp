@@ -94,11 +94,11 @@ export function MintCard() {
                 <div className="flex flex-col gap-2 text-sm mb-6">
                     <div className="flex justify-between">
                         <span className="font-semibold">Collateral:</span>
-                        <span>{globalCollateral ? formatUnits(globalCollateral, 18) : "0.00" } tBTC</span>
+                        <span>{globalCollateral ? Number(formatUnits(globalCollateral, 18)).toFixed(2) : "0.00" } tBTC</span>
                     </div>
                     <div className="flex justify-between">
                         <span className="font-semibold">tUSD Supply:</span>
-                        <span>{tUSDSupply ? formatUnits(tUSDSupply, 18) : "0.00"} tUSD</span>
+                        <span>{tUSDSupply ? Number(formatUnits(tUSDSupply, 18)).toFixed(2) : "0.00"} tUSD</span>
                     </div>
                     <div className="flex justify-between">
                         <span className="font-semibold">Collateral Ratio:</span>

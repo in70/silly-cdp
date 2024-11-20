@@ -1,4 +1,4 @@
-import { AppWindowIcon, Calendar, CircleDollarSign, Home, Inbox, Search, Settings } from "lucide-react"
+import { CircleDollarSign } from "lucide-react"
 
 import {
     Sidebar,
