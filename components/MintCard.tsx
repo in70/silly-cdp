@@ -58,7 +58,7 @@ export function MintCard() {
         args: [address],
     });
 
-    async function Mint(collateralToDeposit: Number, amountToMint: Number) {
+    async function Mint(collateralToDeposit: number, amountToMint: number) {
         await writeContract({
             address: contract,
             abi: ABI,
@@ -81,7 +81,7 @@ export function MintCard() {
 
     useEffect(() => {
         if (collateralFactor) {
-            let cf = Number(collateralFactor) * Number(globaltBTCBalance) / Number(supply) * 100
+            const cf = Number(collateralFactor) * Number(globaltBTCBalance) / Number(supply) * 100
             setCF(cf.toString());
         }
     }, [collateralFactor]);
@@ -137,6 +137,10 @@ export function MintCard() {
                 {/* <div className="flex justify-center mb-6">
                     <Button className="px-6 py-2">Deposit Collateral</Button>
                 </div> */}
+
+                <div className="mb-4 h1">
+                    Amount to Mint
+                </div>
 
                 <div className="relative mb-4">
                     <Input
