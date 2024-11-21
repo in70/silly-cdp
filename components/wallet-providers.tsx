@@ -10,7 +10,7 @@ const config = getDefaultConfig({
     chains: [baseSepolia],
     ssr: true,
 });
-
+//
 export default function WalletProvider({ children }: { children: React.ReactNode }) {
     const queryClient = new QueryClient();
     return (
