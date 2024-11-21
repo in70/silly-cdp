@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { MintCard } from "./MintCard";
-import { RepayCard } from "./RepayCard";
+import { GettBTC } from "./GettBTC";
 
 export function ToggleMintRepay() {
     const [isMint, setIsMint] = useState(true);
@@ -34,7 +34,7 @@ export function ToggleMintRepay() {
                             } flex items-center justify-center`}
                         onClick={handleToggle}
                     >
-                        Repay
+                        Get tBTC
                     </button>
                 </div>
             </div>
@@ -43,7 +43,7 @@ export function ToggleMintRepay() {
                 className={`flex-grow flex items-center justify-center transition-opacity duration-300 ${fade ? "opacity-0" : "opacity-100"
                     }`}
             >
-                {isMint ? <MintCard /> : <RepayCard />}
+                {isMint ? <MintCard /> : <GettBTC />}
             </div>
         </div>
     );
